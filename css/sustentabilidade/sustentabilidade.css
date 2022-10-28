@@ -14,7 +14,7 @@
     
 }
 
-.sust-frota{
+.sust-frt{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -58,36 +58,64 @@
     .sust-pessoas{
         padding-bottom: 200px;
     }
-    .paines-solucao hr {
-        /* display: none; */
-    }
+    
     
 }
 
 @media (max-width: 750px){
-    .sust-tit, .sust-instal,  .sust-pessoas{
+    .sust-tit, .sust-instal, .sust-frt, .sust-pessoas{
         grid-template-columns: 1fr;
         gap: 40px;
+        padding: 32px 16px;
     }
-    .img-sust-instal, .img-sust-pessoas {
+    .img-sust-instal, .img-sust-frota, .img-sust-pessoas {
        
-        width: 80%;
-           
+       width: 110%;
+      
     }
 
     .sust-frt{
         display:flex;
         flex-direction: column;
-       
+        padding-top: 100px;
     }
 
      .img-sust-frota{
        order: 2;
-       width: 100%;
-      
-           
+            
     }
 
-   
-
+   .sust-pessoas{
+    margin-top:-420px;
+    margin-bottom: 200px;
+   }
 }
+
+
+   @media (max-width: 460px){
+    .sust-tit, .sust-instal, .sust-frt, .sust-pessoas{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 32px 16px;
+    }
+    .img-sust-instal, .img-sust-frota, .img-sust-pessoas {
+       
+       width: 90%;
+    }
+
+    .sust-frt{
+        display:flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+
+     .img-sust-frota{
+       order: 2;
+            
+    }
+
+   .sust-pessoas{
+    margin-top:-420px;
+    margin-bottom: -20px;
+   }
+   }
